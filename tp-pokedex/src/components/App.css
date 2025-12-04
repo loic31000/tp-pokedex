@@ -14,8 +14,8 @@ body {
   overflow-y: scroll; /* Barre de défilement verticale si contenu dépasse */
   display: grid;
   gap: 25px;
-  width: 469px;
-  height: 800px;
+  /* width: 469px; */
+  /* height: 800px; */
 }
 
 .pokemon-card {
@@ -40,7 +40,7 @@ p {
 }
 
 .pokemon-detail {
-  background-color: orange;
+  /* background-color: orange; */
   display: grid;
   justify-content: center;
 }
