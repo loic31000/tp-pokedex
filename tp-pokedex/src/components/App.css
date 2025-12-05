@@ -11,11 +11,10 @@ body {
 }
 
 .pokemon-list {
-  overflow-y: scroll; /* Barre de défilement verticale si contenu dépasse */
+  overflow-y: scroll; 
   display: grid;
   gap: 25px;
-  /* width: 469px; */
-  /* height: 800px; */
+  width: 614px;
 }
 
 .pokemon-card {
@@ -32,41 +31,65 @@ body {
   padding-right: 22px;
 }
 
+.pokemon-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 275px;
+}
+
+.pokemon-detail h1 {
+  font-size: 64px;
+  margin-bottom: -22px;
+}
+
+.pokemon-detail img {
+  margin-bottom: -22px;
+}
+
+.span {
+  font-size: 57px;
+}
+
+.types {
+  display: flex;
+  height: 79px;
+  margin-left: 137px;
+}
+.search-bar-container img {
+  font-size: 43px;
+  margin: -21px;
+}
+
+h1 {
+  padding-right: 223px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
 p {
   font-size: 24px;
   padding-left: 22px;
   display: grid;
   justify-content: center;
-}
-
-.pokemon-detail {
-  /* background-color: orange; */
-  display: grid;
-  justify-content: center;
+  margin-bottom: -39px;
 }
 
 .types {
   display: flex;
-  justify-content: center;
-  height: 77px;
+  margin: 0;
+  gap: 60px;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
+.evolution-container {
+  width: 654px;
 }
 
-h2 {
-  display: flex;
-  justify-content: center;
-}
-
-.App {
+.evolutions {
   display: grid;
-}
-
-.search-bar {
-  display: flex;
 }
 
 input {

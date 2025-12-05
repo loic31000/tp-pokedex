@@ -31,15 +31,13 @@ export function PokemonEvolution({
         // Conteneur principal pour la section des évolutions.
         <div className="evolution-container">
             {/* Titre de la section. */}
-            <h3>Évolutions</h3>
+            <h3>Evolution</h3>
             {/* Conteneur pour la liste des cartes d'évolution. */}
             <div className="evolutions">
                 {/* La méthode 'map' parcourt chaque élément (évolution) du tableau apiEvolutions. */}
                 {apiEvolutions.map((evolution) => {
                     // Construction d'une URL d'image fiable et standard (via PokeAPI/sprites) 
                     // en utilisant l'ID du Pokémon.
-                    const reliableImageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${evolution.pokedexId}.png`;
-                    
                     // Retourne le composant 'Pokemon' pour chaque évolution.
                     return (
                         <Pokemon
@@ -49,7 +47,7 @@ export function PokemonEvolution({
                             id={evolution.pokedexId}
                             name={evolution.name}
                             // image : L'URL fiable de l'image est passée.
-                            image={reliableImageUrl} 
+                            image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${evolution.pokedexId}.png`} 
                             // onClick : Rend la carte cliquable et appelle la fonction 'onEvolutionClick' 
                             // avec l'ID du Pokémon pour mettre à jour les détails dans le composant principal.
                             onClick={() => onEvolutionClick(evolution.pokedexId)}

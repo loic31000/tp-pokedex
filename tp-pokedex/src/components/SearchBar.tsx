@@ -58,7 +58,8 @@ export function SearchBar({ onSearch }: {
         // Conteneur pour la barre de recherche.
         <div className="search-bar-container">
             {/* Le champ de saisie (input). */}
-            <input
+            <img src="search-icon.png" alt="🔍" />
+            <input 
                 type="text"
                 // value : L'input est contrôlé par l'état React 'searchTerm'.
                 value={searchTerm}

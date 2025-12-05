@@ -23,7 +23,7 @@ export function Pokemon({
     // L'attribut 'onClick={onClick}' rend toute la carte cliquable et exécute la fonction 'onClick' fournie.
     <div className="pokemon-card" onClick={onClick}>
       {/* Affiche le numéro du Pokémon (N°1, N°2, etc.). */}
-      <p>N°{id}</p>
+      <p>{id}</p>
       {/* Affiche le nom du Pokémon en tant que titre principal. */}
       <h1>{name}</h1>
       {/* Affiche l'image. 'src' est l'URL de l'image, 'alt' est le texte alternatif pour l'accessibilité. */}

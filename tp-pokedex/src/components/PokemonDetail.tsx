@@ -18,7 +18,7 @@ export function PokemonDetail({pokedexId, name, image, apiTypes}: PokemonDTO) {
             {/* Affiche l'image principale du Pokémon. */}
             <img src={image} alt={name}/>
             {/* Affiche le nom du Pokémon en grand titre. */}
-            <h1>{name}</h1>
+            <span>{name}</span>
             {/* Titre pour la section des types. */}
             <h2>Types</h2>
             {/* Conteneur pour afficher les icônes des types. */}
