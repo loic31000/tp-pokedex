@@ -23,7 +23,6 @@ body {
   justify-content: space-between;
   gap: 10px;
   background-color: black;
-  border-radius: 12px;
 }
 .pokemon-card img {
   width: 96px;
@@ -97,6 +96,7 @@ input {
   height: 62px;
   width: 532px;
   font-size: 37px;
+  background-color: #b62f2f;
 }
 
 span {
